@@ -1,8 +1,8 @@
-import diffDate from './date'
+import DiffDate from './date'
+import DatePicker from 'react-datepicker'
+import {useState} from 'react'
 
-export default function setDate() {
-    const date = new Date
-    return (
-        diffDate(date)
-    )
-}
+export default function SetDate() {
+   
+};
+

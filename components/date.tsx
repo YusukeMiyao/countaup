@@ -1,8 +1,8 @@
-import { DialogHTMLAttributes, HtmlHTMLAttributes, JSXElementConstructor } from "react";
+import { DialogHTMLAttributes, HtmlHTMLAttributes, JSXElementConstructor, Props } from "react";
 
 
 
-export default function diffDate(date: Date) {
+export default function DiffDate( date: Date ) {
     //今の日時
     const nowDate = new Date();
     const nowDateNumber = Number(nowDate)
@@ -31,13 +31,10 @@ export default function diffDate(date: Date) {
     //あと何秒
     const d7_Sec = Math.floor(diffDate_sec % 60);
    
-    return (
-        < div >
-            d4_Day + "日" + d5_Hour + "時間" + d6_Minute + "分" + d7_Sec + "秒！！";
-        </div >
-    )
+    return <time>
 
-
+    d4_Day + "日" + d5_Hour + "時間" + d6_Minute + "分" + d7_Sec + "秒！！";
+    </time>
 }
 // //1秒ごとに実行
 // setTimeout(diffDays, 1000);
